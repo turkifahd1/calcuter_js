@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+	</script>
+</head>
+<body>
+    <style>
+        button:active{
+            background-color: green;
+        }
+    </style>
+    <div  style="width: 100%; height: 100%; position: relative; background: white ">
+
+        <div class="calc" style="width: 302px; height: 441px; left: 65px; top: 133px; border-radius:21%; position: absolute; background:black"></div>
+
+          <div ><input style="width: 241px; height: 57px; left: 84px; top: 198px; position: absolute; background: #D9D9D9" type="text" placeholder="0" id="calc"></div>
+        <!-- <div style="width: 34px; height: 36px; left: 82px; top: 301px; position: absolute; background: #D9D9D9"></div> --> -->
+        <!-- <div style="width: 34px; height: 36px; left: 301px; top: 515px; position: absolute; background: #D9D9D9"></div>
+        <div style="width: 34px; height: 36px; left: 300px; top: 463.11px; position: absolute; transform: rotate(-1.88deg); transform-origin: 0 0; background: #D9D9D9"></div>
+        <div style="width: 34px; height: 36px; left: 300px; top: 408px; position: absolute; background: #D9D9D9"></div>
+        <div style="width: 34px; height: 36px; left: 300px; top: 356px; position: absolute; background: #D9D9D9"></div>
+        <div style="width: 34px; height: 36px; left: 300px; top: 301px; position: absolute; background: #D9D9D9"></div>
+        <div style="width: 34px; height: 36px; left: 150px; top: 493px; position: absolute; background: #D9D9D9"></div>
+        <div style="width: 34px; height: 36px; left: 218px; top: 429px; position: absolute; background: #D9D9D9"></div>
+        <div style="width: 34px; height: 36px; left: 150px; top: 429px; position: absolute; background: #D9D9D9"></div>
+        <div style="width: 34px; height: 36px; left: 82px; top: 429px; position: absolute; background: #D9D9D9"></div>
+        <div style="width: 34px; height: 36px; left: 218px; top: 365px; position: absolute; background: #D9D9D9"></div>
+        <div style="width: 34px; height: 36px; left: 150px; top: 365px; position: absolute; background: #D9D9D9"></div>
+        <div style="width: 34px; height: 36px; left: 82px; top: 365px; position: absolute; background: #D9D9D9"></div>
+        <div style="width: 34px; height: 36px; left: 218px; top: 301px; position: absolute; background: #D9D9D9"></div>
+        <div style="width: 34px; height: 36px; left: 150px; top: 301px; position: absolute; background: #D9D9D9"></div> --> -->
+        <div ><button style="left: 80px; top: 264px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word" onclick="Clear()">clc</button></div>
+
+        <div ><button style="left: 85px; top: 304px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word" onclick="display('1')">1</button></div>
+        <div><button  style="left: 164px; top: 307px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word" onclick="display('2')">2</button></div>
+        <div ><button style="left: 233px; top: 304px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word" onclick="display('3')">3</button></div>
+        <div ><button style="left: 85px; top: 370px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word" onclick="display('4')">4</button></div>
+        <div ><button style="left: 164px; top: 371px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word" onclick="display('5')">5</button></div>
+        <div ><button style="left: 227px; top: 371px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word" onclick="display('6')">6</button></div>
+        <div ><button style="left: 96px; top: 432px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word" onclick="display('7')">7</button></div>
+        <div ><button style="left: 164px; top: 432px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word"  onclick="display('8')">8</button></div>
+        <div><button  style="left: 225px; top: 432px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word" onclick="display('9')">9</button></div>
+        <div ><button style="left: 164px; top: 496px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word" onclick="display('0')">0</button></div>
+        <div ><button style="left: 310px; top: 301px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word" onclick="display('+')">+</button></div>
+        <div ><button style="left: 312px; top: 360px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word" onclick="display('-')">-</button></div>
+        <div ><button style="left: 310px; top: 417px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word" onclick="display('*')">*</button></div>
+        <div><button  style="left: 314px; top: 465px; position: absolute; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word" onclick="display('/')">/</button></div>
+        <div ><button style="left: 240px; top: 523px; position: absolute; color: black;background-color: rgb(245, 35, 151); font-size: 25px; font-family: Inter; font-weight: 700;width: 100px; word-wrap: break-word" onclick="calc('=')">=</button></div>
+        </div>
+
+        <script>
+            let output=document.getElementById("calc")
+            function display(num){
+                output.value +=num;
+            }
+            function Clear(){
+                output.value ="";
+            }
+            function calc(){
+                try{
+                   output.value= eval(output.value)
+                }
+                catch(err){
+                    output.value="error"
+                }
+            }
+        </script>
+
+</body>
+</html>
